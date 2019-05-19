@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  server:
+    image: 'petekinnecom/pavlov:0.1'
+    volumes:
+      - './Game.ini:/home/steam/pavlovserver/Pavlov/Saved/Config/LinuxServer/Game.ini'
+      - './mods.txt:/home/steam/pavlovserver/Pavlov/Saved/Config/mods.txt'
+      - './blacklist.txt:/home/steam/pavlovserver/Pavlov/Saved/Config/blacklist.txt'
+      - './whitelist.txt:/home/steam/pavlovserver/Pavlov/Saved/Config/whitelist.txt'
